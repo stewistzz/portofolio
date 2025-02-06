@@ -1,0 +1,233 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    /* background-color: #0A1128; */
+    color: #fff;
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    /* scroll-behavior: smooth; */
+}
+
+.header {
+    background-color: #0A1128;
+}
+
+footer {
+    background-color: #0A1128;
+}
+
+.navbar {
+    background-color: #0A1128;
+    color: white;
+}
+
+/* button */
+.button-cv {
+    background-color: #e3e3e3;
+    color: #0A1128;
+    border-radius: 15px;
+    font-weight: 500;
+    width: 200px;
+}
+.button-cv:hover {
+    background-color: #e3e3e3;
+    color: #0A1128;
+    border-radius: 25px;
+    font-weight: 600;
+    width: 250px;
+    transition: all 0.5s ease-in-out;
+}
+
+.wrap-content .edu:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    /* Ketebalan underline */
+    text-underline-offset: 4px;
+    /* Jarak underline dari teks */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.wrap-content .exp:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    /* Ketebalan underline */
+    text-underline-offset: 4px;
+    /* Jarak underline dari teks */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.wrap-content .find:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    /* Ketebalan underline */
+    text-underline-offset: 4px;
+    /* Jarak underline dari teks */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.content {
+    height: 80px;
+}
+
+.end {
+    height: 200px;
+    background-color: #0A1128;
+    display: flex; /* Mengaktifkan Flexbox */
+    justify-content: center; /* Memusatkan secara horizontal */
+    align-items: center; /* Memusatkan secara vertikal */
+}
+
+
+.end .email {
+    background-color: #e3e3e3;
+    color: #0A1128;
+    border-radius: 15px;
+    font-weight: 500;
+    width: 100px;
+}
+.end .email:hover {
+    background-color: #e3e3e3;
+    color: #0A1128;
+    border-radius: 25px;
+    font-weight: 600;
+    width: 150px;
+    transition: all 0.5s ease-in-out;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: white;
+  }
+
+.wrap-content a{
+    color: #0A1128;
+    font-size: 20px;
+}
+
+.wrap-content a:hover {
+    color: #0A1128;
+    font-size: 25px;
+    transition: all 0.3s ease;
+}
+
+/* sticky effect content */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white; /* Supaya tidak transparan */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+/* end sticky effect */
+
+/* edu */
+.education h2 {
+    margin-top: 80px;
+    color: #0A1128;
+}
+.education h5, h6,li {
+    color: #0A1128;
+}
+.education hr {
+    background-color: #0A1128;
+}
+.image img{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* find me */
+.find h2 {
+    margin-top: 80px;
+    color: #0A1128;
+}
+
+hr {
+    background-color: #0A1128;
+}
+
+.image img{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #0A1128;
+    border-radius: 10%;
+}
+
+.btn {
+    color: #0A1128;
+    background-color: #fff;
+    font-size: 15px;
+}
+.btn:hover {
+    /* color: #0A1128; */
+    /* background-color: #fff; */
+    font-weight: 600;
+    font-size: 17px;
+    transition: all 0.3s ease;
+    /* border-radius: 20%; */
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.skill img {
+    width: 120px;
+    height: 80px;
+}
+
+/* experience */
+
+.skill {
+    color: #0A1128;
+}
+
+.gallery-section {
+    padding: 50px;
+    /* text-align: center; */
+    color: #0A1128;
+}
+.owl-carousel .item img {
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.owl-carousel .item img:hover {
+    transform: scale(1.1);
+}
+.detail-section {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: none;
+}
+.detail-image {
+    width: 100%;
+    border-radius: 10px;
+}
+.footer-line {
+    background-color: #fff;
+    /* height: 10px; */
+}
