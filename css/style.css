@@ -191,12 +191,18 @@ hr {
 }
 
 .skill img {
-    width: 120px;
+    width: 80px;
     height: 80px;
 }
 
-/* experience */
 
+.skill img:hover {
+    width: 90px;
+    height: 90px;
+    transition: all 0.3s ease;
+}
+
+/* experience */
 .skill {
     color: #0A1128;
 }
@@ -230,4 +236,17 @@ hr {
 .footer-line {
     background-color: #fff;
     /* height: 10px; */
+}
+
+.insta {
+    background-color: #fff;
+}
+
+.card .card-body {
+    font-size: 12px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #0A1128;
 }
