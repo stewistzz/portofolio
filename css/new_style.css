@@ -1,0 +1,651 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e6e9fc;
+}
+
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #5d75ff;
+  color: white;
+}
+
+/* LOGO */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* MENU */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.nav-links li a:hover {
+  /* color: #5D75FF; */
+  font-size: 17.1px;
+  font-weight: 600;
+  transition: ease-in-out 0.3s;
+}
+
+/* HAMBURGER */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* hero section */
+.hero {
+  /* padding: 60px 0; */
+}
+
+
+
+.hero .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 kolom sama */
+  /* gap: 20px; */
+  align-items: center;
+}
+
+/* styling biar keliatan */
+.hero-left {
+  background: #5d75ff;
+  padding-left: 40px;
+  padding-right: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* biar h1 + p ke bawah */
+  justify-content: center;
+}
+.hero-left h2 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.hero-left p {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.hero-center {
+  background: #e6e9fc;
+  padding: 20px;
+  text-align: center;
+}
+.hero-center img {
+  width: 68%;
+  /* standard-image-orientation: from-image; */
+}
+
+.hero-right {
+  background: #5d75ff;
+  padding-left: 40px;
+  padding-right: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* biar h1 + p ke bawah */
+  justify-content: center;
+}
+
+.hero-right h2 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* education section */
+.education {
+  padding: 50px 0;
+  background: #e6e9fc;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  padding-left: 30px;
+  color: #5d75ff;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.education-card {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #5d75ff, #6c7bff);
+  color: white;
+  gap: 30px;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.education-card.sma {
+  opacity: 0.7;
+}
+
+/* kiri */
+.edu-left {
+  width: 30%;
+}
+
+/* kanan */
+.edu-right {
+  width: 70%;
+}
+
+/* section projects */
+.project-section {
+  padding: 50px;
+  background: #f5f5f5;
+}
+
+.project-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  /* padding-left: 30px; */
+  color: #5d75ff;
+}
+
+.projects .owl-carousel .item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.projects .project-detail {
+  /* margin-top: 30px; */
+  margin-top: 30px;
+  /* margin-bottom: 30px; */
+  color: #5d75ff;
+}
+
+.project-section .item {
+  color: #5d75ff;
+}
+
+.project-detail h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-detail p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* active projects */
+/* default (yang tidak aktif) */
+.owl-item {
+  opacity: 0.5;
+  transform: scale(0.85);
+  transition: all 0.4s ease;
+}
+
+.owl-item.center {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 2;
+}
+
+.owl-item.center img {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.owl-stage {
+  display: flex;
+  align-items: center;
+}
+/* ===================================== */
+/* style untuk experience dan leadership */
+/* ===================================== */
+/* SECTION */
+.exp-leadership {
+  /* padding: 60px 0; */
+  padding-top: 50px;
+  background: #5d75ff;
+  color: white;
+  /* padding-left: 50px;
+  padding-right: 50px; */
+}
+.experience-section {
+  padding-left: 50px;
+  padding-right: 50px;
+  background: #5d75ff;
+}
+.exp-leadership .section-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  padding-left: 40px;
+  color: #f5f5f5;
+}
+
+/* SUB TITLE */
+.sub-title {
+  margin: 30px 0 15px;
+  font-size: 22px;
+}
+
+/* ========================= */
+/* EXPERIENCE SCROLL */
+/* ========================= */
+
+.exp-list.scrollable {
+  max-height: 350px; /* tinggi area scroll */
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-left: 10px;
+}
+
+/* scrollbar custom */
+.exp-list.scrollable::-webkit-scrollbar {
+  width: 10px;
+}
+
+.exp-list.scrollable::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 30px;
+}
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+.exp-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  background: #f5f5f5;
+  color: #5d75ff;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* LEFT */
+.left {
+  width: 30%;
+}
+
+.left h4 {
+  font-weight: 600;
+}
+
+.left span {
+  font-size: 14px;
+}
+
+/* RIGHT */
+.right {
+  width: 70%;
+}
+
+.right h4 {
+  margin-bottom: 10px;
+}
+
+/* ========================= */
+/* LEADERSHIP */
+/* ========================= */
+
+.leadership-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background: #fff;
+}
+
+.leadership-section h3 {
+  color: #5d75ff;
+}
+
+.leadership-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lead-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  background: #5d75ff;
+  color: #f5f5f5;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* ========================== */
+/* ACHIEVEMENT SECTION */
+/* ========================== */
+
+.achievement {
+  /* padding: 60px 0; */
+  padding-top: 50px;
+  color: white;
+}
+
+.achievement .section-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  padding-left: 40px;
+}
+
+/* ========================== */
+/* CAROUSEL KHUSUS ACHIEVEMENT */
+/* ========================== */
+
+.achievement-carousel {
+  background: #5d75ff;
+  padding: 60px;
+  position: relative;
+}
+
+/* CENTER ITEM */
+.achievement-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+}
+
+/* ========================== */
+/* ITEM */
+/* ========================== */
+
+.achievement-item {
+  display: flex;
+  justify-content: center; /* INI BIAR TENGAH */
+}
+
+.achv-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px; /* supaya tidak terlalu lebar */
+}
+
+/* ========================== */
+/* IMAGE */
+/* ========================== */
+
+.achv-image {
+  width: 377px;
+  height: 377px;
+  overflow: hidden;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.achv-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ========================== */
+/* TEXT */
+/* ========================== */
+
+.achv-text h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.achv-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.achv-text span {
+  font-weight: 500;
+}
+
+/* ========================== */
+/* NAV KHUSUS ACHIEVEMENT */
+/* ========================== */
+
+.achievement-carousel .owl-nav {
+  display: block !important;
+}
+
+.achievement-carousel .owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px !important;
+  color: white !important;
+  /* background: rgba(0,0,0,0.2) !important; */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* POSISI PANAH */
+.achievement-carousel .owl-prev {
+  left: 20px;
+}
+
+.achievement-carousel .owl-next {
+  right: 20px;
+}
+
+/* HOVER */
+/* .achievement-carousel .owl-nav button:hover {
+  background: rgba(0,0,0,0.4) !important;
+} */
+
+
+/* CONTACT */
+.contact {
+  background: #f5f5f5;
+  padding: 80px 0;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-around; /* lebih rapi dari space-around */
+  align-items: center;
+  gap: 50px;
+}
+
+/* LEFT */
+.contact-left p {
+  font-size: 28px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.contact-left h2 {
+  font-size: 36px;
+  color: #5D75FF;
+  font-weight: 700;
+}
+
+/* RIGHT */
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-item img {
+  width: 40px;
+  height: 40px;
+}
+
+/* LINK */
+.contact-item a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+}
+
+.contact-item a:hover {
+  color: #5D75FF;
+}
+
+/* ========================== */
+/* FOOTER */
+/* ========================== */
+
+.footer {
+  background: linear-gradient(90deg, #5D75FF, #6C7BFF);
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.footer p {
+  font-size: 16px;
+}
+
+/* ================================================================= */
+
+/* ========================= */
+/* RESPONSIVE (HP) */
+/* ========================= */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #333;
+    flex-direction: column;
+    align-items: center;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .nav-links.active {
+    max-height: 300px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* responsive exp dan leadership */
+  .exp-card,
+  .lead-card {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .exp-list.scrollable {
+    max-height: 300px;
+  }
+
+  /* achievement */
+  .achv-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .achv-image {
+    width: 100%;
+    height: 250px;
+  }
+
+  /* hero responsive */
+  .hero-grid {
+    grid-template-columns: 1fr; /* jadi 1 kolom */
+  }
+
+  /* URUTAN */
+  .hero-right {
+    order: 1; /* QUOTE dulu */
+  }
+
+  .hero-center {
+    order: 2; /* FOTO kedua */
+  }
+
+  .hero-left {
+    order: 3; /* DESKRIPSI terakhir */
+  }
+
+  /* tambahan biar rapi */
+  .hero-left,
+  .hero-center,
+  .hero-right {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .hero-center img {
+    width: 60%;
+  }
+
+  /* contact */
+  .contact-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .contact-left p {
+    font-size: 22px;
+  }
+
+  .contact-left h2 {
+    font-size: 28px;
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+
+  .contact-item a {
+    font-size: 18px;
+  }
+
+}
