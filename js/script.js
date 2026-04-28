@@ -21,22 +21,24 @@ $(document).ready(function () {
     },
   });
 
-  function updateDetail(el) {
-    const title = $(el).data("title");
-    const desc = $(el).data("desc");
+  function updateDetail(index) {
+    const currentItem = owl.find(".owl-item").eq(index).find(".item");
+
+    const title = currentItem.data("title");
+    const desc = currentItem.data("desc");
 
     $("#projectTitle").text(title);
     $("#projectDesc").text(desc);
   }
 
-  // pertama kali load
-  const firstItem = $("#projectCarousel .owl-item.active.center .item");
-  updateDetail(firstItem);
+  // saat pertama load
+  owl.on("initialized.owl.carousel", function (event) {
+    updateDetail(event.item.index);
+  });
 
   // saat slide berubah
   owl.on("changed.owl.carousel", function (event) {
-    const current = $(".owl-item.active.center .item");
-    updateDetail(current);
+    updateDetail(event.item.index);
   });
 });
 
