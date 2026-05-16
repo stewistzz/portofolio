@@ -8,7 +8,6 @@ toggle.addEventListener("click", () => {
 // prjects
 $(document).ready(function () {
   const owl = $("#projectCarousel");
-
   owl.owlCarousel({
     items: 3,
     margin: 20,
@@ -19,6 +18,15 @@ $(document).ready(function () {
       768: { items: 2 },
       1024: { items: 3 },
     },
+  });
+  
+  // CUSTOM NAVIGATION 
+  $(".custom-next").click(function () { 
+    owl.trigger("next.owl.carousel"); 
+  }); 
+
+  $(".custom-prev").click(function () { 
+    owl.trigger("prev.owl.carousel"); 
   });
 
   function updateDetail(index) {
